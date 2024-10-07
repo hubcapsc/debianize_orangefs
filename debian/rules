@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_autoreconf:
+	./prepare
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--prefix=/opt/orangefs \
+		--with-db-backend=lmdb \
+		--enable-shared

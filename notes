@@ -1,0 +1,40 @@
+
+Use "make dist" to create a tar file with orangefs source and documentation:
+pvfs-2.10.0-orangefs-DEVEL-2024-09-10-202757.tar.gz
+
+Adjust tar file name to comply with debian naming convention:
+mv pvfs-2.10.0-orangefs-DEVEL-2024-09-10-202757.tar.gz orangefs_2.10.0.orig.tar.gz
+
+Debian control files:
+debian/copyright
+debian/changelog
+debian/source/format
+debian/rules
+debian/control
+
+debuild builds a debian package:
+tar xf orangefs_2.10.0.orig.tar.gz
+cd *57
+cp -r ../debian .
+debuild -us -uc
+
+Goal: use "apt install" on prepared orangefs package.
+
+-----------------------------------------
+DEPENDencies are in the control file. Probably still needs some adjustment...
+automake
+gcc
+bison
+flex
+make
+libacl1-dev ?
+libssl-dev  ?
+libaio-dev  ?
+libldap-dev ?
+
+SUGGESTED
+texlive-binaries
+texlive-latex-base
+texlive-fonts-recommended
+latex2html
+

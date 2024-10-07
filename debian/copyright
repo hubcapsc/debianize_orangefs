@@ -1,0 +1,78 @@
+C) 2010-2018 Clemson University and Omnibond Systems, LLC
+(C) 2001 Clemson University and The University of Chicago
+(C) 2003-6 Pete Wyckoff, Ohio Supercomputer Center <pw@osc.edu>
+(C) 2002 Clemson University
+(C) 2005 Tobias Eberle <tobias.eberle@gmx.de>
+(C) 2007 University of Chicago
+(C) 2011 Clemson University and The University of Chicago
+(C) 2002 Clemson University and The University of Chicago
+(C) 2010 Clemson University
+Copyright Acxiom Corporation, 2005
+portions taken from mount.pvfs.c (PVFS 1.6.3) (c) 1997 Clemson University
+(C) 2004 Clemson University and The University of Chicago
+Changes by Acxiom Corporation to add support for mode, multiple directory
+creation, and parent creation.
+Copyright Acxiom Corporation, 2005.
+(C) 2013 Clemson University and The University of Chicago
+Copyright Acxiom Corporation, 2005
+based on pvfs2-set-mode:
+(C) 2001 Clemson University and The University of Chicago
+Copyright 2010-2014 Clemson University and The University of Chicago
+Copyright Acxiom Corporation, 2006
+(C) 2001-13 Clemson University, The University of Chicago
+(C) 2013-2014 Clemson University and Omnibond Systems LLC
+(C) 2011 Clemson University
+(C) 2014 Clemson University and The University of Chicago
+(C) 2007 The University of Chicago
+(C) 2003 Pete Wyckoff, Ohio Supercomputer Center <pw@osc.edu>
+Changes by Acxiom Corporation to allow concurrency on operations that are
+either read-only or do not modify specific objects
+Copyright Acxiom Corporation, 2005.
+(C) 2008 Clemson University and The University of Chicago
+Copyright 2001-12 Clemson University
+Changes by Acxiom Corporation to add dirent_count field to attributes
+Copyright Acxiom Corporation, 2005.
+(C) 2013 Clemson University / Omnibond Systems LLC
+(C) 2017 Clemson University and Omnibond Systems, LLC
+Copyright 2015 Omnibond Systems, L.L.C.
+Copyright 2015, 2016 Omnibond Systems, L.L.C.
+(C) 2000 Clemson University, Scyld Computing Inc.
+(C) 2005 Frederik Gruell <frederik.gruell@web.de>
+(C) Kyle Schochenmaier 2007
+Copyright (C) 2004-6 Pete Wyckoff <pw@osc.edu>
+Copyright (C) 2006 Kyle Schochenmaier <kschoche@scl.ameslab.gov>
+Copyright (C) 2008 Pete Wyckoff <pw@osc.edu>
+Copyright (C) 1997, 1998, 2000, 2001, 2002 Free Software Foundation, Inc.
+Modified by Phil Carns (pcarns@parl.clemson.edu)
+June 2003
+For use with custom network encoding routines in the BMI component of
+the Parallel Virtual File System version 2.
+(C) 2001-2011 Clemson University, The University of Chicago and
+              Omnibond LLC
+Copyright (C) 2007 Pete Wyckoff <pw@osc.edu>
+Copyright (C) 2007-8 Pete Wyckoff <pw@osc.edu>
+Copyright (C) 2008 Pete Wyckoff <pw@osc.edu>
+Copyright (C) 2007 Myricom, Inc.
+(C) 1995-2001 Clemson University and Argonne National Laboratory
+(C) 2007 Clemson University and The University of Chicago
+(C) 2003 Clemson University and The University of Chicago
+Changes by Acxiom Corporation to add relative path support to
+PVFS_util_resolve(),
+Copyright Acxiom Corporation, 2005
+(C) 2006 Clemson University and The University of Chicago
+Copyright 2014 Omnibond Systems LLC
+Copyright (C) 2012 Clemson University and Omnibond Systems, LLC
+(C) 2010 Clemson University and The University of Chicago
+(C) 2009 Clemson University and The University of Chicago
+(C) 2014 Clemson University
+Copyright (C) 1990-2012 Free Software Foundation, Inc.
+Copyright (C) 1995-1997,2003,2006,2007,2012 Free Software Foundation, Inc.
+Copyright (C) 1991-2002, 2003, 2004, 2005, 2006, 2007, 2008, 2010, 2011
+Free Software Foundation, Inc.
+Copyright (C) 1991,1992,1995-1998,2000,2001,2004,2010,2011,2012
+Free Software Foundation, Inc.
+Changes by Acxiom Corporation to add extra safety checks via getattr
+Copyright Acxiom Corporation, 2005.
+(C) 2003 Clemson University, The University of Chicago, and Omnibond Systems, LL
+C
+(C) 2013 Clemson University and Omnibond Systems LLC

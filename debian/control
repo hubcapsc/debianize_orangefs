@@ -1,0 +1,26 @@
+Source: orangefs
+Maintainer: Mike Marshall <hubcap@omnibond.com>
+Section: misc
+Priority: optional
+Standards-Version: 4.7.0
+Build-Depends: debhelper-compat (= 13), automake, gcc, bison, flex, make, libacl1-dev, libssl-dev, libaio-dev, libldap-dev
+	
+
+Package: pvfs2-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: distributed userspace filesystem server
+ runs on every node that is part of an orangefs volume.
+
+Package: pvfs2-client
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: kernel module userspace client
+ used by the kernel module to communicate with the file system server.
+
+Package: pvfs2-client-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: pvfs2-client watchdog
+ restarts pvfs2-client if a problem arises.
+
