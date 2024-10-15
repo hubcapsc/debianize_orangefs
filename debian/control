@@ -3,7 +3,7 @@ Maintainer: Mike Marshall <hubcap@omnibond.com>
 Section: misc
 Priority: optional
 Standards-Version: 4.7.0
-Build-Depends: debhelper-compat (= 13), automake, gcc, bison, flex, make, libacl1-dev, libssl-dev, libaio-dev, libldap-dev
+Build-Depends: debhelper-compat (= 13), automake, gcc, bison, flex, make, libacl1-dev, libssl-dev, libaio-dev, libldap-dev, csh
 	
 
 Package: pvfs2-server
@@ -23,4 +23,19 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: pvfs2-client watchdog
  restarts pvfs2-client if a problem arises.
+
+Package: libpvfs2-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: development files.
+
+Package: pvfs2-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: native pvfs2 tools
+
+Package: pvfs2-man
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: man pages
 
