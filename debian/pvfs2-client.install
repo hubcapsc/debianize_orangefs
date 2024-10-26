@@ -1,1 +1,9 @@
+usr/include
+usr/lib/*/*.a
+usr/lib/*/*.so.*
+usr/lib/*/*.so
+usr/sbin/pvfs2-client-core
 usr/sbin/pvfs2-client
+usr/sbin/pvfs2-start-all
+usr/sbin/pvfs2-stop-all
+usr/bin/*
