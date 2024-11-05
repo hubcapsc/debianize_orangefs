@@ -3,7 +3,7 @@ Maintainer: Mike Marshall <hubcap@omnibond.com>
 Section: misc
 Priority: optional
 Standards-Version: 4.7.0
-Build-Depends: debhelper-compat (= 13), automake, bison, flex, libacl1-dev, libssl-dev, libaio-dev, libldap-dev, csh
+Build-Depends: debhelper-compat (= 13), automake, bison, flex, libacl1-dev, libssl-dev, libaio-dev, libldap-dev
 	
 
 Package: pvfs2-server
@@ -14,7 +14,7 @@ Description: distributed userspace filesystem server
 
 Package: pvfs2-client
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, csh
 Description: userspace clients and library.
  orangefs library, api and tools.
 
