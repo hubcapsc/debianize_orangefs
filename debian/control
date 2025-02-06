@@ -18,9 +18,3 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, csh
 Description: userspace clients and library.
  orangefs library, api and tools.
 
-Package: pvfs2-man
-Architecture: any
-Depends: ${misc:Depends}
-Description: man pages
-  man pages and formatted tex documents.
-

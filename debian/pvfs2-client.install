@@ -7,3 +7,4 @@ usr/sbin/pvfs2-client
 usr/sbin/pvfs2-start-all
 usr/sbin/pvfs2-stop-all
 usr/bin/*
+usr/share/man/man1
