@@ -6,15 +6,8 @@ Standards-Version: 4.7.0
 Build-Depends: debhelper-compat (= 13), automake, bison, flex, libacl1-dev, libssl-dev, libaio-dev, libldap-dev
 	
 
-Package: pvfs2-server
+Package: orangefs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: distributed userspace filesystem server
- runs on every node that is part of an orangefs volume.
-
-Package: pvfs2-client
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, csh
-Description: userspace clients and library.
- orangefs library, api and tools.
+Description: distributed userspace filesystem server, clients and library.
 
