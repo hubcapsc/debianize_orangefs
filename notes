@@ -12,6 +12,10 @@ debian/source/format
 debian/rules
 debian/control
 
+git clean -dqfs         <-------- think before typing
+cp ../orangefs/pvfs-2.10.0-orangefs-DEVEL-2025-04-07-183512.tar.gz orangefs_2.10.0.orig.tar.gz
+
+
 debuild builds a debian package:
 tar xf orangefs_2.10.0.orig.tar.gz
 cd *57

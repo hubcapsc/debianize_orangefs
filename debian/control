@@ -10,4 +10,7 @@ Package: orangefs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: distributed userspace filesystem server, clients and library.
+ OrangeFS provides scalable, parallel storage for clusters and supercomputers,
+ optimized for large-scale data access and resilience. Includes an
+ interposition library (liborangefs.so) for redirecting libc calls to OrangeFS.
 
