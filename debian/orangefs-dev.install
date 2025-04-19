@@ -1,0 +1,5 @@
+usr/lib/x86_64-linux-gnu/liborangefs.so
+usr/lib/x86_64-linux-gnu/libpvfs2.so
+usr/include/pvfs2-*.h
+usr/include/pvfs2.h
+usr/include/orange.h

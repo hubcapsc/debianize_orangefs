@@ -2,15 +2,38 @@ Source: orangefs
 Maintainer: Mike Marshall <hubcap@omnibond.com>
 Section: misc
 Priority: optional
-Standards-Version: 4.7.0
+Standards-Version: 4.6.2
 Build-Depends: debhelper-compat (= 13), automake, bison, flex, libacl1-dev, libssl-dev, libaio-dev, libldap-dev
 	
-
-Package: orangefs
+Package: orangefs-server
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: distributed userspace filesystem server, clients and library.
+Description: distributed userspace filesystem server.
  OrangeFS provides scalable, parallel storage for clusters and supercomputers,
- optimized for large-scale data access and resilience. Includes an
- interposition library (liborangefs.so) for redirecting libc calls to OrangeFS.
+ optimized for large-scale data access and resilience.
 
+Package: orangefs-client
+Architecture: any
+Depends: libpvfs2, ${shlibs:Depends}, ${misc:Depends}
+Description: orangefs client programs.
+ Includes the shim for kernel/server communication and various
+ programs (pvfs2-ls, pvfs2-mkdir, etc) for use outside the scope
+ of the upstream kernel module.
+
+Package: orangefs-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: orangefs header files.
+ The header files allow for writing custom code using orangefs' API.
+
+Package: liborangefs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: interposition library.
+ The interposition library allows for overriding clib functions
+
+Package: libpvfs2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Orangefs shared library.
+ The shared library for Orangefs core functionality.

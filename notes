@@ -24,6 +24,25 @@ debuild -us -uc
 
 Goal: use "apt install" on prepared orangefs package.
 
+----------------[ lintan: initial-upload-closes-no-bugs ]------------------
+
+use "reportbug" to file an itp.
+
+google "file a debian itp with reportbug" to get some instructions.
+
+What It Means: The warning is triggered when a package’s debian/changelog
+file for its first upload (version 1.0 or similar) does not include a
+Closes: #bug-number statement to indicate that it resolves a specific
+Debian bug, such as an Intent to Package (ITP) bug. In Debian, new
+packages are typically introduced to address an ITP bug filed in the
+Debian Bug Tracking System (BTS), which documents the intent to package
+a new piece of software (e.g., OrangeFS).
+
+Since OrangeFS is a new package you’re Debianizing, you should have filed
+an Intent to Package (ITP) bug in the Debian BTS before uploading. The ITP
+bug serves as a public record of your intent to package OrangeFS and
+allows other maintainers to provide feedback or avoid duplicate work.
+
 -----------------------------------------
 DEPENDencies are in the control file. Probably still needs some adjustment...
 automake
