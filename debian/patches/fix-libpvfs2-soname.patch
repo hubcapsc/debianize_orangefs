@@ -1,0 +1,15 @@
+Description: Fix SONAME for libpvfs2 to use major version only
+ The SONAME was incorrectly set to libpvfs2.so.2.10.0
+Author: Mike Marshall hubcap@omnibond.com
+Date: 2025-04-20
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -999,7 +999,7 @@
+ lib/libpvfs2.so: $(LIBPICOBJS)
+ 	$(Q) "  LDSO		$@"
+ 	$(E)$(INSTALL) -d lib
+-	$(E)$(LDSHARED) -Wl,-soname,libpvfs2.so.$(SO_FULLVER) -o $@ $(LIBPICOBJS) $(DEPLIBS)
++	$(E)$(LDSHARED) -Wl,-soname,libpvfs2.so.$(SO_VER) -o $@ $(LIBPICOBJS) $(DEPLIBS)
+ 
+ # rule for building the shared pvfs2 _multithreaded_ library
+ lib/libpvfs2-threaded.so: $(LIBTHREADEDPICOBJS)

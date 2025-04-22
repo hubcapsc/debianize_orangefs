@@ -1,0 +1,17 @@
+Description: Fix SONAME for liborangefs to use major version only
+ The SONAME was incorrectly set to liborangefs.so.2.10.0, which includes
+ the full version. This patch changes it to liborangefs.so.2 to follow
+ standard practice and align with Debian naming conventions.
+Author: Mike Marshall hubcap@omnibond.com
+Date: 2025-04-20
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -1017,7 +1017,7 @@
+ lib/liborangefs.so: $(OLIBPICOBJS) lib/libpvfs2.so
+ 	$(Q) "  LDSO		$@"
+ 	$(E)$(INSTALL) -d lib
+-	$(E)$(LDSHARED) -Wl,-soname,liborangefs.so.$(SO_FULLVER),-z,interpose,-Bsymbolic -o $@ $(OLIBPICOBJS) $(OLIBDEPLIBS) $(DEPLIBS)
++	$(E)$(LDSHARED) -Wl,-soname,liborangefs.so.$(SO_VER),-z,interpose,-Bsymbolic -o $@ $(OLIBPICOBJS) $(OLIBDEPLIBS) $(DEPLIBS)
+ 
+ # rule for building the ofs library
+ lib/libofs.a: $(ULIBOBJS)

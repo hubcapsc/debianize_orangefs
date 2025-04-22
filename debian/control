@@ -14,7 +14,7 @@ Description: distributed userspace filesystem server.
 
 Package: orangefs-client
 Architecture: any
-Depends: libpvfs2, ${shlibs:Depends}, ${misc:Depends}
+Depends: libpvfs2-2, ${shlibs:Depends}, ${misc:Depends}
 Description: orangefs client programs.
  Includes the shim for kernel/server communication and various
  programs (pvfs2-ls, pvfs2-mkdir, etc) for use outside the scope
@@ -26,13 +26,13 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: orangefs header files.
  The header files allow for writing custom code using orangefs' API.
 
-Package: liborangefs
+Package: liborangefs2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: interposition library.
  The interposition library allows for overriding clib functions
 
-Package: libpvfs2
+Package: libpvfs2-2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Orangefs shared library.
