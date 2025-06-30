@@ -1,11 +1,4 @@
 #
-# liborangefs.so is an interposition library for redirecting standard
-# libc calls to orangefs, but no standard orangefs programs are linked
-# to liborangefs.so
-#
-orangefs: link-to-shared-library-in-wrong-package usr/lib/x86_64-linux-gnu/liborangefs.so.2.10.0
-orangefs: link-to-shared-library-in-wrong-package usr/lib/x86_64-linux-gnu/liborangefs.so
-#
 # associated with hugo, a static site generator
 #
 source-is-missing [doc/random/SystemInterfaceTesting/SystemInterfaceTesting.html]

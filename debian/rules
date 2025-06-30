@@ -5,9 +5,6 @@
 override_dh_autoreconf:
 	./prepare
 
-override_dh_auto_build:
-	$(MAKE) dist
-
 # there are historical perl scripts in the source that are no longer
 # used. Deleting the scripts is an option, but leaving them in allows
 # for historical retrospection.

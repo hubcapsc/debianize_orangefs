@@ -22,13 +22,13 @@ Description: orangefs client programs.
 
 Package: orangefs-dev
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}
 Description: orangefs header files.
  The header files allow for writing custom code using orangefs' API.
 
 Package: liborangefs2
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: libpvfs2-2, orangefs-dev, ${shlibs:Depends}, ${misc:Depends}
 Description: interposition library.
  The interposition library allows for overriding clib functions
 
