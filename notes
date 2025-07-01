@@ -1,4 +1,10 @@
 
+Get orangefs from https://github.com/waltligon/orangefs
+
+use "prepare" to create a config file
+
+Use "configure" to create a make file
+
 Use "make dist" to create a tar file with orangefs source and documentation:
 pvfs-2.10.0-orangefs-DEVEL-2024-09-10-202757.tar.gz
 
