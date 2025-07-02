@@ -35,5 +35,5 @@ Description: interposition library.
 Package: libpvfs2-2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Orangefs shared library.
- The shared library for Orangefs core functionality.
+Description: Orangefs core functionality.
+ Functions used by orangefs clients to manipulate the filesystem. 
