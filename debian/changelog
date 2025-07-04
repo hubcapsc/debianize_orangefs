@@ -1,5 +1,5 @@
-orangefs (2.10.0-1) UNRELEASED; urgency=medium
+orangefs (2.10.0-1) UNRELEASED; urgency=low
 
-  * Initial release. (Closes: #XXXXXX)
+  * dummy fodder for testing
 
  -- Mike Marshall <hubcap@omnibond.com>  Wed, 25 Sep 2024 11:37:10 -0400
