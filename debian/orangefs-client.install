@@ -1,8 +1,7 @@
 usr/sbin/pvfs2-client
 usr/sbin/pvfs2-client-core
-usr/sbin/pvfs2-start-all
-usr/sbin/pvfs2-stop-all
 usr/bin/pvfs2-*
+usr/share/man/man1/pvfs2-config.1.gz
 usr/share/man/man1/pvfs2-viewdist.1.gz
 usr/share/man/man1/pvfs2-check-server.1.gz
 usr/share/man/man1/pvfs2-showcoll.1.gz
