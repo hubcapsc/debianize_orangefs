@@ -1,5 +1,7 @@
+Using the debianize_orangefs/debian config directory:
 
-Get orangefs from https://github.com/waltligon/orangefs
+
+Get orangefs from https://github.com/waltligon/orangefs.
 
 use "prepare" to create a config file
 
@@ -11,10 +13,45 @@ pvfs-2.10.0-orangefs-DEVEL-2024-09-10-202757.tar.gz
 Adjust tar file name to comply with debian naming convention:
 mv pvfs-2.10.0-orangefs-DEVEL-2024-09-10-202757.tar.gz orangefs_2.10.0.orig.tar.gz
 
+Get debianize_orangefs from https://github.com/hubcapsc/debianize_orangefs
+
+cd debianize_orangefs
+cp ../orangefs/orangefs_2.10.0.orig.tar.gz .
 tar xf orangefs_2.10.0.orig.tar.gz
 cd resulting-directory
-cp -r ../debianize_orangefs/debian .
+cp -r ../debian .
 debuild -us -uc
 
-use "apt install" on prepared orangefs packages.
+
+
+
+Quick test (using a fresh "net" or "full" vm):
+
+apt install /tmp/orangefs-server_2.10.0-1_amd64.deb
+apt install /tmp/libpvfs2-2_2.10.0-1_amd64.deb
+apt install /tmp/orangefs-client_2.10.0-1_amd64.deb
+
+
+echo "tcp://$(hostname):3334/orangefs /pvfsmnt pvfs2 defaults,noauto 0 0" > /etc/pvfs2tab
+
+pvfs2-genconfig /etc/pvfs-orangefs.conf
+  for test, take all the defaults, but use the real hostname, not localhost.
+
+pvfs2-server -f /etc/pvfs-orangefs.conf
+
+pvfs2-server /etc/pvfs-orangefs.conf
+
+pvfs2-ls
+
+insmod /lib/modules/`uname -r`/kernel/fs/orangefs/orangefs.ko
+
+pvfs2-client -L /var/log/client.log
+
+mkdir /pvfsmnt
+
+mount -t pvfs2 tcp://`hostname`:3334/orangefs /pvfsmnt -o acl
+
+touch /pvfsmnt/kmod_file
+
+pvfs2-ls
 
