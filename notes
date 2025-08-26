@@ -24,8 +24,24 @@ debuild -us -uc
 
 
 
+$ grep -E 'Description:|Package:' control
+Package: orangefs-server
+Description: distributed userspace filesystem server.
+Package: orangefs-client
+Description: orangefs client programs.
+Package: orangefs-dev
+Description: orangefs header files.
+Package: liborangefs2
+Description: interposition library.
+Package: libpvfs2-2
+Description: Orangefs core functionality.
+
 
 Quick test (using a fresh "net" or "full" vm):
+
+Use full path for deb file. Full path must be readable by user "_apt".
+Become root with "su -" or some other way that causes you to get
+root's PATH.
 
 apt install /tmp/orangefs-server_2.10.0-1_amd64.deb
 apt install /tmp/libpvfs2-2_2.10.0-1_amd64.deb

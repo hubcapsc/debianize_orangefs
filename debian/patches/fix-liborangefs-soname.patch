@@ -1,5 +1,5 @@
 Description: Fix SONAME for liborangefs to use major version only
- The SONAME was incorrectly set to liborangefs.so.2.10.0, which includes
+ The SONAME was incorrectly set to liborangefs.so.2.10.1, which includes
  the full version. This patch changes it to liborangefs.so.2 to follow
  standard practice and align with Debian naming conventions.
 Author: Mike Marshall hubcap@omnibond.com
